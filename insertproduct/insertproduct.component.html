@@ -1,0 +1,137 @@
+
+<!-- <div style="text-align:center;">
+    <h1 style="font-family:Times New Roman, serif;font-size: xx-large;">Sign Up</h1>
+    <br/>
+    <form [formGroup]="RegisterForm"   (ngSubmit)="SubmitData()">
+        
+    <br/>
+    <div class="form-group">
+    <label style="font-family:Times New Roman, serif;font-size:large;"  >Enter ProductName:</label>
+    <input type="text" class="form-control form-control-sm" formControlName="ProductName" name="ProductName" id="ProductName"/>
+    </div>
+    <div class="form-group">
+        <label style="font-family:Times New Roman, serif;font-size:large;">ActualPrice:</label>
+        <input type="number" class="form-control form-control-sm"  formControlName="ActualPrice" name="ActualPrice" id="ActualPrice"/>
+        </div>
+    <br/>
+    <div class="form-group">
+        <label style="font-family:Times New Roman, serif;font-size:large;">Discount:</label>
+        <input type="text" class="form-control form-control-sm"  formControlName="Discount" name="Discount" id="Discount"/>
+        </div>
+        <br/>
+        <div class="form-group">
+            <label style="font-family:Times New Roman, serif;font-size:large;">Quantity:</label>
+            <input type="number" class="form-control form-control-sm"  formControlName="Quantity" name="Quantity" id="Quantity"/>
+        </div>
+        <br/>
+        <div class="form-group">
+            <label style="font-family:Times New Roman, serif;font-size:large;" >Description:</label>
+            <input type="text" class="form-control form-control-sm" formControlName="Description" name="Description" id="Description"/>
+            
+            </div>
+        
+        
+        <br/>
+    
+    <div class="form-group">
+    <label style="font-family:Times New Roman, serif;font-size:large;">ProductImage:</label>
+    <input type="Byte" class="form-control form-control-sm"  formControlName="ProductImage" name="ProductImage" id="ProductImage"/>
+    </div>
+    <br/>
+
+    <div class="form-group">
+        <label style="font-family:Times New Roman, serif;font-size:large;">CategoryId:</label>
+        <input type="number" class="form-control form-control-sm"  formControlName="CategoryId" name="CategoryId" id="CategoryId"/>
+        </div>
+        <br/>
+    
+    <button type="submit" >Submit</button>
+  
+    &nbsp;&nbsp;<button type="submit"  routerLink="/login" routerLinkActive="active" >Go Back</button>
+    
+    </form> 
+    </div> -->
+
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- <form #addSupplier="ngForm" (ngSubmit)="add(addSupplier.value)"> -->
+        <form [formGroup]="RegisterForm"   (ngSubmit)="SubmitData()">
+    <div class="body">
+    <div class="container contact">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="contact-info">
+                    
+                    <h2>ADMIN PANEL</h2>
+                    <h4>Add the Products</h4>
+                </div>
+            </div>
+
+           
+           <div class="col-md-9">
+                <div class="contact-form">
+                    <!-- <div class="form-group">
+                      <label class="control-label col-sm-2" for="fname">Product ID:</label>
+                      <div class="col-sm-10">          
+                        <input type="text"  class="form-control" id="id"name="ProductId" formControlName="ProductId" placeholder="Enter ProductId" name="ProductId"/>
+                      </div>
+                    </div> -->
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="lname">ProductName:</label>
+                      <div class="col-sm-10">          
+                        <input type="text" class="form-control" id="lname" formControlName="ProductName" placeholder="Enter Product name" name="ProductName"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="email">Actual Price:</label>
+                      <div class="col-sm-10">
+                        <input type="number" class="form-control" id="email" formControlName="ProductName" placeholder="Enter Actual Price" name="ActualPrice">
+                      </div>
+                    </div>
+    
+                        <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Quantity:</label>
+                        <div class="col-sm-10">
+                          <input type="number" class="form-control" id="Quantity" formControlName="ProductName" placeholder="Enter Quantity" name="Quantity">
+                        </div>
+                      </div>
+    
+    
+                      
+    
+    
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="comment">Description:</label>
+                        <div class="col-sm-10">
+                          <textarea class="form-control" rows="5" id="comment"  formControlName="ProductName" placeholder="Enter Description" name="Description"></textarea>
+                        </div>
+                      </div>
+    
+    
+    
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">CategoryId:</label>
+                        <div class="col-sm-10">
+                          <input type="number" class="form-control" id="CategoryId" formControlName="ProductName" placeholder="Enter CategoryId" name="CategoryId">
+                        </div>
+                      </div>
+    
+    
+    
+    
+                    <div class="form-group">        
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default" >Submit</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    </form>
