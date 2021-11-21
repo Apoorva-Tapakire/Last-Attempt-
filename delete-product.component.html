@@ -1,0 +1,6 @@
+
+<form #deleteSupplier="ngForm" (ngSubmit)="btnclick(deleteSupplier.value)">
+
+    <input type="text" name="prodID" [(ngModel)]="prodID"/>
+    <input type="submit" value="Delete"  />
+</form>    
